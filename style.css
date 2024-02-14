@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20%);
+}
+
+header, main, footer {
+    border: 2px solid black;
+}
+
+header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    grid-column: 2 / 6;
+}
+
+footer {
+    grid-column: 1 / 6;
+    height: 10vh;
+}
