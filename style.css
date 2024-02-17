@@ -19,7 +19,7 @@ body {
     height: 100%;
 }
 
-header, main {
+header {
     padding: 20px;
 }
 
@@ -68,7 +68,7 @@ header li > a:hover {
     text-decoration: underline;
 }
 
-header li > img {
+header li > img, #search-icon {
     height: 1.2rem;
     margin-right: 20px;
 }
@@ -84,4 +84,93 @@ header li > img {
 
 main {
     grid-column: 2 / 6;
+}
+
+.search-and-intro {
+    box-shadow: 0 2px 5px 0 gray;
+    padding: 20px 40px;
+}
+
+.search-layer, .search-layer-left, .search-layer-right, .intro-layer, .intro-layer-left, .intro-layer-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-layer, .intro-layer {
+    justify-content: space-between;
+}
+
+.search-layer-left {
+    width: 70%;
+}
+
+.search-layer-right {
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.search-layer-right #username {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#search {
+    border-radius: 20px;
+    background-color: var(--under-layer);
+    border: none;
+    width: 90%;
+    padding: 7px;
+}
+
+#bell {
+    height: 1.2rem;
+}
+
+#user-logo {
+    height: 3rem;
+    border-radius: 50%;
+}
+
+#intro-logo {
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.intro-layer {
+    margin-top: 20px;
+}
+
+#intro-logo + div span {
+    font-weight: bold;
+}
+
+#intro-logo + div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#intro-username {
+    font-size: 2rem;
+}
+
+.intro-layer-right {
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.intro-layer-right button {
+    border-radius: 20px;
+    background-color: var(--header-bg);
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 5rem;
+    border: none;
+}
+
+.intro-layer-right button:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
