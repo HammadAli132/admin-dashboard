@@ -7,6 +7,7 @@
 :root {
     --header-bg: #1992d4;
     --under-layer: #e2e8f0;
+    --light-text: rgb(107, 106, 106);
 }
 
 html {
@@ -120,14 +121,14 @@ main {
     background-color: var(--under-layer);
     border: none;
     width: 90%;
-    padding: 7px;
+    padding: 10px;
 }
 
 #bell {
     height: 1.2rem;
 }
 
-#user-logo {
+#user-logo, .trend > img {
     height: 3rem;
     border-radius: 50%;
 }
@@ -232,6 +233,7 @@ main {
 .project-desc {
     font-size: 14px;
     font-weight: lighter;
+    color: var(--light-text);
 }
 
 .content {
@@ -247,4 +249,53 @@ main {
 .tally img {
     height: 1.2rem;
     margin-right: 10px;
+}
+
+.announcement-box, .trending-box {
+    padding: 20px;
+    height: auto;
+}
+
+.announce {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.announce:last-child {
+    border-bottom: none;
+}
+
+.announcment-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.announcment-desc {
+    font-size: 12px;
+    font-weight: lighter;
+    color: var(--light-text);
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trend > img {
+    margin-right: 10px;
+}
+
+.msg-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-username, .msg {
+    font-size: 14px;
+}
+
+.msg {
+    color: var(--light-text);
 }
