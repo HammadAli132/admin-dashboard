@@ -89,6 +89,7 @@ main {
 .search-and-intro {
     box-shadow: 0 2px 5px 0 gray;
     padding: 20px 40px;
+    position: relative;
 }
 
 .search-layer, .search-layer-left, .search-layer-right, .intro-layer, .intro-layer-left, .intro-layer-right {
@@ -173,4 +174,77 @@ main {
 .intro-layer-right button:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+.main-display {
+    background-color: var(--under-layer);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 20px;
+}
+
+.project-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+}
+
+.projects {
+    grid-area: 1 / 1 / 3 / 7;
+}
+
+.announcments {
+    grid-area: 1 / 7 / 2 / 9;
+}
+
+.trending {
+    grid-area: 2 / 7 / 3 / 9;
+}
+
+.card, .announcement-box, .trending-box {
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px -2px gray;
+}
+
+.MD-title, .project-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.project-area, .announcement-box, .trending-box {
+    margin-top: 10px;
+}
+
+.trending {
+    margin-top: 1rem;
+}
+
+.card {
+    border-left: 8px solid rgb(80, 80, 80);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-desc {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.content {
+    flex: 1;
+}
+
+.tally {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tally img {
+    height: 1.2rem;
+    margin-right: 10px;
 }
