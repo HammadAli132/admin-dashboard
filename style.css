@@ -18,6 +18,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20%);
     height: 100%;
+    font-family: Roboto;
 }
 
 header {
@@ -232,7 +233,6 @@ main {
 
 .project-desc {
     font-size: 14px;
-    font-weight: lighter;
     color: var(--light-text);
 }
 
@@ -273,7 +273,6 @@ main {
 
 .announcment-desc {
     font-size: 12px;
-    font-weight: lighter;
     color: var(--light-text);
 }
 
